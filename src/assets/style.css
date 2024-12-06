@@ -1,0 +1,311 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: auto;
+}
+
+body{
+  background-color: #f9f6f2;
+}
+
+.navbar {
+  background-color: #fff;
+  height: 80px;
+
+}
+
+.navbar-brand {
+  background: url(../img/MAXBm.png) no-repeat center center;
+  width: 220px;
+  height: 60px;
+  display: inline-block;
+  text-indent: -9999px;
+
+}
+
+.navbar-logo, .offcanvas-logo {
+  max-width: 100px; 
+  height: auto;
+  
+}
+
+.visually-hidden span{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link{
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.carta {
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  max-width: 400px; 
+  text-align: center; 
+}
+
+.carta .card-img-top {
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px auto 10px; 
+  display: block;
+}
+
+.carta .card-body {
+  text-align: center;
+}
+
+.carta {
+  display: flex;
+  align-items: center; 
+  gap: 20px; 
+}
+
+.carta picture {
+  flex: 0 0 auto;
+}
+
+.carta .card-body {
+  flex: 1;
+}
+
+.carta img.card-img-top {
+  height: auto; 
+  border-radius: 8px;
+}
+
+.modal-body a {
+  color: #000000; 
+  text-decoration: none; 
+}
+
+
+.modal-body a:hover {
+  color: #000000; 
+  text-decoration: underline; 
+}
+
+
+@media (min-width: 992px) {
+ 
+  .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #009970;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::before, .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .carta {
+    flex-direction: column;
+    max-width: 100%; 
+    text-align: center; 
+  }
+
+  .carta .card-img-top {
+    margin: 20px auto 10px;
+    order: -1; 
+  }
+
+  .carta .card-body {
+    margin-bottom: 20px;
+  }
+
+  .carta picture {
+    margin: 0 auto;
+  }
+}
+
+.c-item {
+  height: 900px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+#toggle-objetivo:checked ~ #objetivo-btn {
+  display: none;
+}
+#toggle-objetivo:checked ~ #ver_objetivo {
+  display: block;
+}
+#ver_objetivo {
+  display: none;
+}
+
+.picture img{
+  max-height: 670px;
+}
+
+.blue-bg {
+  background-color: #0a58ca;
+  color: #fff;
+}
+
+.ionicons {
+  color: #0a58ca;
+  background-color: #f2f2f2;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 12px;
+}
+
+.productos .card-img-top {
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.productos .card {
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.productos .card-body {
+  padding: 25px;
+  margin-top: -15px;
+}
+
+.productos .btn-primary {
+  border-radius: 50px;
+  width: 120px;
+}
+
+.productos .btn-primary:hover {
+  background-color: black;
+  border: none;
+}
+
+.productos h3,
+.productos h4 {
+  color: rgb(0, 91, 228);
+}
+
+.formulario {
+  width: 68%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.formulario .col-md-7 {
+  padding: 20px; 
+}
+
+.formulario .col-md-5 {
+  background: #1089ff;
+  padding: 40px;
+  color: white;
+  border-radius: 0 10px 10px 0;
+}
+
+.formulario .form-control {
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; 
+}
+
+.formulario label {
+  margin-bottom: 10px; 
+}
+
+.formulario .bi {
+  font-size: 20px;
+}
+
+.formulario .d-flex p {
+  font-size: 18px;
+  padding-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formulario .row {
+  justify-content: center; 
+  margin: 0;
+}
+
+.contact-info .divider {
+  border-bottom: 1px solid #ddd; 
+  margin: 1rem 0; 
+}
+
+
+.social-icon {
+  font-size: 2rem; 
+  color: white; 
+  text-decoration: none; 
+}
+
+.social-icon:hover {
+  color: #ddd; 
+}
+
+
+@media (max-width: 991px) {
+  .formulario {
+      width: 90%;
+  }
+  
+  .formulario .col-md-7, .formulario .col-md-5 {
+      padding: 20px;
+  }
+
+  .formulario .col-md-5 {
+      border-radius: 0 0 10px 10px; 
+  }
+
+  .formulario .col-md-7 {
+      border-radius: 10px 10px 0 0; 
+  }
+}
+
